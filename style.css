@@ -1,0 +1,177 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(70, 107, 136, 1) 50%,
+    rgba(0, 212, 255, 1) 90%
+  );
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 900px;
+  background-color: gainsboro;
+  align-items: center;
+  justify-content: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(70, 107, 136, 1) 50%,
+    rgba(0, 212, 255, 1) 90%
+  );
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 30px;
+}
+/* column 1----------------------------------------- */
+
+.col1 {
+  width: 80%;
+  height: 90%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4%;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.col1inside {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  margin: 5%;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+.add {
+  margin-bottom: 3%;
+  width: 101%;
+  height: 15%;
+  background-color: #34d264ff;
+  border-radius: 25px;
+  border-style: dashed;
+  border-color: #e5e5e4ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add:hover {
+  font-size: larger;
+  color: antiquewhite;
+}
+
+.tasks {
+  background-color: white;
+  width: 90%;
+  height: 75%;
+  overflow-y: scroll;
+}
+.circle {
+  color: #e5e5e4ff;
+}
+/* column 1----------------------------------------- */
+
+/* list style----------------------------------------- */
+#items > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  width: 90%;
+  height: 15%;
+  margin: 1%;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+  padding: 1%;
+}
+
+select {
+  border-color: transparent;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px;
+}
+input[type="text"] {
+  border: none;
+  background-color: none;
+  outline: 0;
+  font-size: 25px;
+  width: 1000px;
+  height: 30px;
+}
+
+input[type="text"]:focus {
+  border: none;
+  background-color: none;
+  outline: 0;
+  width: 300px;
+  height: 30px;
+}
+
+input[type="date"] {
+  border-color: transparent;
+  background-color: white;
+  border-radius: 30px;
+  height: 30px;
+  width: 220px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px;
+}
+
+/* list style----------------------------------------- */
+
+/* Button Style----------------------------------------- */
+.btn {
+  position: absolute;
+  bottom: 6%;
+  right: 5%;
+  font-size: 1rem;
+  color: #333;
+  background-color: aqua;
+  cursor: pointer;
+  width: 150px;
+  height: 100px;
+}
+/* Responsive----------------------------------------- */
+@media screen and (max-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    height: 100%;
+  }
+  .col1 {
+    width: 90%;
+  }
+  #items > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.center {
+  height: 40px;
+  width: 300px;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
